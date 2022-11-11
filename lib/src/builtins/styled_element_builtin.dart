@@ -433,7 +433,7 @@ class StyledElementBuiltIn extends HtmlExtension {
             (context.styledElement!.children.isNotEmpty ||
                 context.elementName == "hr"))) {
       return WidgetSpan(
-        alignment: PlaceholderAlignment.baseline,
+        alignment: context.styledElement!.style.placeholderAlignment,
         baseline: TextBaseline.alphabetic,
         child: CssBoxWidget.withInlineSpanChildren(
           key: AnchorKey.of(context.parser.key, context.styledElement),

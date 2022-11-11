@@ -17,7 +17,7 @@ abstract class ReplacedElement extends StyledElement {
     required super.elementId,
     List<StyledElement>? children,
     required super.node,
-    this.alignment = PlaceholderAlignment.aboveBaseline,
+    this.alignment = PlaceholderAlignment.top,
   }) : super(children: children ?? []);
 
   static List<String?> parseMediaSources(List<dom.Element> elements) {
