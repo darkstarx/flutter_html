@@ -2,6 +2,7 @@ name: flutter_html_all
 description: All optional flutter_html widgets, bundled into a single package.
 version: 3.0.0-beta.2
 homepage: https://github.com/Sub6Resources/flutter_html
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <4.0.0"
@@ -11,13 +12,27 @@ dependencies:
   flutter:
     sdk: flutter
   html: '>=0.15.0 <1.0.0'
-  flutter_html: ^3.0.0-beta.2
-  flutter_html_audio: ^3.0.0-beta.2
-  flutter_html_iframe: ^3.0.0-beta.2
-  flutter_html_math: ^3.0.0-beta.2
-  flutter_html_svg: ^3.0.0-beta.2
-  flutter_html_table: ^3.0.0-beta.2
-  flutter_html_video: ^3.0.0-beta.2
+  # flutter_html: ^3.0.0-beta.2
+  flutter_html:
+    path: ../../
+  # flutter_html_audio: ^3.0.0-beta.2
+  flutter_html_audio:
+    path: ../../packages/flutter_html_audio
+  # flutter_html_iframe: ^3.0.0-beta.2
+  flutter_html_iframe:
+    path: ../../packages/flutter_html_iframe
+  # flutter_html_math: ^3.0.0-beta.2
+  flutter_html_math:
+    path: ../../packages/flutter_html_math
+  # flutter_html_svg: ^3.0.0-beta.2
+  flutter_html_svg:
+    path: ../../packages/flutter_html_svg
+  # flutter_html_table: ^3.0.0-beta.2
+  flutter_html_table:
+    path: ../../packages/flutter_html_table
+  # flutter_html_video: ^3.0.0-beta.2
+  flutter_html_video:
+    path: ../../packages/flutter_html_video
 
 dev_dependencies:
   flutter_test:
