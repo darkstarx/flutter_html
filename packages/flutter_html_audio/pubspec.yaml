@@ -14,7 +14,10 @@ dependencies:
   html: '>=0.15.0 <1.0.0'
   # flutter_html: ^3.0.0-beta.2
   flutter_html:
-    path: ../../
+    git:
+      url: git@github.com:darkstarx/flutter_html.git
+      ref: git
+    # path: ../../
   video_player: '>=2.2.8 <3.0.0'
   chewie_audio: ^1.5.0
 
